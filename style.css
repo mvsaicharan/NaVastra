@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    padding: 30px;
+    padding-left: 40px;
+    column-gap: 30px;
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.line{
+    position: absolute;
+    background-color: #494949;
+    height: 30px;
+    width: 1px;
+    z-index: -2;
+}
+
+.nav ul li:hover .line, .line:hover{
+    animation: slider 0.8s forwards;
+}
+
+@keyframes slider{
+    0%{
+        width: 1px;
+    }
+
+    100%{
+        width:calc(var(--i) * 20px);
+    }
+}
+
+.logo {
+    margin-left: 19vw;
+    margin-top: -20px;
+}
+
+.login {
+    margin-left: 600px;
+}
+
+video {
+    margin-top: -35px;
+    position: absolute;
+    opacity: 0.3;
+    width: 98.5vw;
+    z-index: -2;
+}
+
+.btn{
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #494949;
+    color: white;
+    border: #494949;
+    border-style:solid;
+    cursor: pointer;
+}
+
+.makeYown {
+    height: 70px;
+    width: 400px;
+    font-size: 25px;
+    margin-left: 650px;
+    margin-top: 600px;
+}
+
+.products h1 {
+    font-weight: 500;
+    margin-left: 35px;
+    margin-top: 50px;
+    color: white
+}
+
+.prod {
+    display: flex;
+    flex-direction: row;
+    column-gap: 200px;
+    margin-left: 35px;
+}
+
+.prodimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.prodimg img{
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.name {
+    color: white;
+    font-size: 22px;
+}
+
+.prodPrice {
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+footer p {
+    width: 1030px;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+.custbtn {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin-left: 420px;
+    margin-top: 400px;
+}
+
+.apt, .custman {
+    height: 70px;
+    width: 400px;
+    font-size: 25px;
+}
+
+.both {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    margin-top: 30px;
+}
+
+.display {
+    width: 500px;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 300px;
+    border-style: groove;
+    border-color: white;
+    border-width: 5px;
+}
+
+.display img {
+    width: 500px;
+    height: 600px;
+}
+
+.options label {
+    font-size: 20px;
+    color: white;
+}
+
+.type-options, .size-options, .colour-options{
+    display: flex;
+    column-gap: 40px;
+}
+
+/* .type {
+    visibility: hidden;
+} */
+
+input:checked + label {
+    color:#ffffff;
+    font-weight: 700;
+}
+
+.custdesign {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.desimg {
+    width: 150px;
+    height: 25px;
+}
+
+.quantity {
+    width: 25px;
+    height: 20px;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+}
+
+.options select {
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: white;
+    border-width: 3px;
+    color: white;
+    background-color: #000000;
+}
+
+.confirmbtn {
+    height: 70px;
+    width: 400px;
+    font-size: 25px;
+}
+
+.details {
+    margin-left: 650px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.det{
+    font-size: 20px;
+    color: white;
+}
+
+.fp {
+    font-size: 30px;
+    color: white;
+}
+
+.buy {
+    height: 70px;
+    width: 400px;
+    font-size: 25px;
+}
+
+
+
+
+
+.loginf{
+    margin-top: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: #ffffff;
+}
+
+.logintextbox {
+    background-color: #00000000;
+    height: 80px;
+    width: 400px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    font-size: 20px;
+}
+
+.logbtn {
+    background-color: #00000000;
+    height: 80px;
+    width: 405px;
+    border-color: white;
+    border-width: 4px;
+    border-style: solid;
+    color: white;
+    font-size: 20px;
+}
+
+.os {
+    display: flex;
+    flex-direction: column;
+    color: green;
+    font-size: 30px;
+    align-items: center;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.fbtn {
+    height: 70px;
+    width: 400px;
+    font-size: 25px;
+}
+
+.csbtn {
+    height: 70px;
+    width: 400px;
+    font-size: 25px;
+}

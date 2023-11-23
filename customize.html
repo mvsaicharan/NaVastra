@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make yown apparel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <ul>
+                <li>
+                    <div style="--i:4" class="line"></div>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <div style="--i:5.25" class="line"></div>
+                    <a href="index.html#products">Products</a>
+                </li>
+                <li>
+                    <div style="--i:6.1" class="line"></div>
+                    <a href="custop.html">Customize</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <img src="images/logo.jpg" >
+            </div>
+            <ul class="login"><li><a href="login.html">Login</a></li></ul>
+        </div>
+    </nav>
+    <div class="both">
+        <div class="display">
+            <img src="images/round_red.jpg" name="dispimg" id="dispimg">
+        </div>
+        <div class="options">
+            <!-- <label>Apparel</label><br>
+            <div class="apparel-options">
+                </div>
+                    <input type="radio" name="apparel" class="apparel" id="tshirt">
+                    <label for="tshirt">T-shirt</label>
+                <div>    
+                </div>
+                
+                <div>    
+                </div>
+                
+                <div>    
+                </div>
+                
+                <div>    
+            </div> -->
+            <br>
+            <label>Type</label><br>
+            <div class="type-options">
+                <div>
+                    <input type="radio" name="type" class="type" id="rounded">
+                    <label for="rounded">Rounded</label>
+                </div>
+                <div>
+                    <input type="radio" name="type" class="type" id="polo">
+                    <label for="polo">Polo</label>
+                </div>
+                <div>
+                    <input type="radio" name="type" class="type" id="vneck">
+                    <label for="vneck">V-neck</label>
+                </div>
+                <div>
+                    <input type="radio" name="type" class="type" id="henley">
+                    <label for="henley">Henley</label>
+                </div>
+            </div>
+            <br>
+            <label>Size</label><br>
+            <div class="size-options">
+                <div>
+                    <input type="radio" name="size" class="size" id="S">
+                    <label for="S">S</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" class="size" id="M">
+                    <label for="M">M</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" class="size" id="L">
+                    <label for="L">L</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" class="size" id="XL">
+                    <label for="XL">XL</label>
+                </div>
+            </div>
+            <br>
+            <label>Colour</label><br>
+            <div class="colour-options">
+                <div>
+                    <input type="radio" name="colour" class="colour" id="red"></input>
+                    <label for="red">Red</label>
+                </div>
+                <div>
+                    <input type="radio" name="colour" class="colour" id="blue"></input>
+                    <label for="blue">Blue</label>
+                </div>
+                <div>
+                    <input type="radio" name="colour" class="colour" id="black"></input>
+                    <label for="black">Black</label>
+                </div>
+                <div>
+                    <input type="radio" name="colour" class="colour" id="white"></input>
+                    <label for="white">White</label>
+                </div>
+            </div>
+            <br>
+            <div class="custdesign">
+                <div>
+                    <input type="checkbox" id="designReq">
+                    <label for="designReq">Upload your own design (Extra cost)</label>
+                </div>
+                <input type="file" class="desimg">
+                <div>
+                    <input type="radio" name="custdes" class="custdes" id="printed">
+                    <label for="printed">Printed</label>
+                </div>
+                <div>
+                    <input type="radio" name="custdes" class="custdes" id="embroidered">
+                    <label for="embroidered">Embroidered</label>
+                </div>
+            </div>
+            <br>
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" class="quantity">
+            <br><br><br>
+            <a ><button class="btn confirmbtn" id="confirmbtn">Confirm</button></a>
+        </div>
+    </div>
+    <script src="func.js"></script>
+</body>
+</html>
